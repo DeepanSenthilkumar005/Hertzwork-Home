@@ -3,7 +3,7 @@ import logo from '../assets/logo.jpg';
 
 function NavBar() {
   return (
-    <div className="navbar w-full flex items-center justify-between bg-black py-[12.5px] px-8 text-white">
+    <div className="navbar w-screen flex items-center justify-between bg-black py-[12.5px] px-8 text-white">
       <img src={logo} alt="Logo" className="logo w-36 cursor-pointer ml-5" />
 
       <ul className="list w-full justify-center flex list-none text-center p-0 flex-1">
