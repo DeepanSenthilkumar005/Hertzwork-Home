@@ -1,6 +1,6 @@
-import NavBar from "./components/Navbar";
-import Image from "./components/Image";
-import WelcomePage from "./components/WelcomePage";
+import NavBar from "../src/components/NavBar";
+import Image from "../src/components/Image";
+import WelcomePage from "../src/components/WelcomePage";
 
 
 function App() {

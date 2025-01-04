@@ -8,6 +8,8 @@ module.exports = {
       colors: { 
         welcometext:'#86868b',
         darkGray: '#1a1a1a',
+        csorange: '#FE5D26',
+        csblue : '#6C63FF00',
         // 'cus-theme': '#ffffff',
         //  customGray: '#f8f8f8',
         //  customBlack: '#000000',
