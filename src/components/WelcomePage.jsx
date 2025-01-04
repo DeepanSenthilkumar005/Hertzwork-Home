@@ -1,8 +1,8 @@
 import welcomePerson from '../assets/welcomePerson.png'
 import icon1 from '../assets/icon1.png'
-import icon2 from '../assets/icon1.png'
-import icon3 from '../assets/icon1.png'
-import icon4 from '../assets/icon1.png'
+import icon2 from '../assets/Icon2.png'
+import icon3 from '../assets/Icon3.png'
+import icon4 from '../assets/Icon4.png'
 import iconback from '../assets/iconback.png'
 function WelcomePage() {
     const cardData = [
@@ -13,7 +13,7 @@ function WelcomePage() {
     ];
   
     return (
-      <section className="welcomePage bg-black w-screen h-screen text-center grid md:grid-rows-4">
+      <section className="welcomePage font-s bg-black w-screen h-screen text-center grid md:grid-rows-4">
         {/* Top Content */}
         <div className="topContent md:row-span-3 p-0 m-0 w-full h-full grid md:grid-cols-2">
           {/* Left Content */}
@@ -43,8 +43,8 @@ function WelcomePage() {
               className="bg-[#1a1a1a] rounded-md my-2 hover:scale-105 duration-200 ease-in-out flex flex-col items-center justify-center p-4"
             >
               {/* <i className="text-3xl mb-2">{card.icon}</i> */}
-              <img src={iconback} alt="" className=' ms-auto hover:rotate-45 duration-200 ease-in-out transition-all' />
-              <img src={card.icon} alt="" className='' />
+              <img src={iconback} alt="" className=' ms-auto hover:cursor-pointer hover:rotate-45 duration-200 ease-in-out transition-all' />
+              <img src={card.icon} alt={card.title} className='' />
               <p className="text-white">{card.title}</p>
             </div>
           ))}
