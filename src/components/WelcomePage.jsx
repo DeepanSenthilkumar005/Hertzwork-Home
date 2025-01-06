@@ -17,7 +17,7 @@ function WelcomePage() {
         {/* Top Content */}
         <div className="topContent md:row-span-3 p-0 m-0 w-full h-full grid md:grid-cols-2">
           {/* Left Content */}
-          <div className="leftContent justify-center rounded-br-[4rem] md:col-span-1 h-fit my-auto p-7 px-11 ms-20 rounded-md bg-darkGray">
+          <div className="leftContent justify-center stm:mx-auto m-2 p-2 md:rounded-br-[4rem] md:col-span-1 h-fit my-auto p-7 px-11 ms-20 rounded-md bg-darkGray">
             <h2 className="heading mt-5 text-white text-4xl">
               Welcome to <span className="text-orange-600">Hertzworkz!</span>
             </h2>
@@ -36,7 +36,7 @@ function WelcomePage() {
         </div>
   
         {/* Bottom Content */}
-        <div className="bottomContent grid stm:grid-cols-2 md:grid-cols-4 gap-3 p-2 bg-[#313132] m-4 rounded-md h-4/5 h-fit text-welcometext">
+        <div className="bottomContent grid stm:grid-cols-2 md:grid-cols-4 gap-3 p-2 bg-[#313132] m-4 rounded-md h-fit text-welcometext">
           {cardData.map((card, index) => (
             <div
               key={index}
