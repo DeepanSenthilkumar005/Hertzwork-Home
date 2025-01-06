@@ -17,6 +17,7 @@ module.exports = {
         csorange: '#FE5D26',
         csblue : '#6C63FF00',
         csblue2:'#4280EF',
+        csLightGray:'#B3B3B3',
         // 'cus-theme': '#ffffff',
         //  customGray: '#f8f8f8',
         //  customBlack: '#000000',
