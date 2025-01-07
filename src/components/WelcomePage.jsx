@@ -3,7 +3,7 @@ import icon1 from '../assets/icon1.png'
 import icon2 from '../assets/Icon2.png'
 import icon3 from '../assets/Icon3.png'
 import icon4 from '../assets/Icon4.png'
-import iconback from '../assets/iconback.png'
+import iconback from './../../src/assets/iconback.png'
 function WelcomePage() {
     const cardData = [
       { title: "Innovative Design", icon: icon1 },
@@ -17,7 +17,7 @@ function WelcomePage() {
         {/* Top Content */}
         <div className="topContent md:row-span-3 p-0 m-0 w-full h-full grid md:grid-cols-2">
           {/* Left Content */}
-          <div className="leftContent justify-center stm:mx-auto m-2 p-2 md:rounded-br-[4rem] md:col-span-1 h-fit my-auto p-7 px-11 ms-20 rounded-md bg-darkGray">
+          <div className="leftContent justify-center stm:mx-auto m-2 md:rounded-br-[4rem] md:col-span-1 h-fit my-auto p-7 px-11 ms-20 rounded-md bg-darkGray">
             <h2 className="heading mt-5 text-white text-4xl">
               Welcome to <span className="text-orange-600">Hertzworkz!</span>
             </h2>
