@@ -3,7 +3,7 @@ import icon1 from '../assets/icon1.png'
 import icon2 from '../assets/Icon2.png'
 import icon3 from '../assets/Icon3.png'
 import icon4 from '../assets/Icon4.png'
-import iconback from "../assets/iconback.png";
+import iconback from "../assets/Iconback.png";
 
 function WelcomePage() {
     const cardData = [
