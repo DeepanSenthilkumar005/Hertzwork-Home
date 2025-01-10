@@ -7,7 +7,7 @@ function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="navbar z-50 sticky top-0 w-screen flex items-center justify-between bg-black py-[12.5px] px-8 text-white">
+    <div className="navbar w-screen flex items-center justify-between bg-black py-[12.5px] px-8 text-white">
       {/* Logo */}
       <img
         src={logo}

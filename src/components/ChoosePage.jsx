@@ -31,12 +31,12 @@ function ChoosePage() {
     <section className="choosePage max-h-screen w-screen bg-black text-white">
       {/* Top Portion */}
       <div className="topPortion  text-center p-8">
-        <h1 className="text-csorange font-bold md:text-6xl glow-text mb-4">
+        <h1 className="text-glow text-[50px] font-bold text-[#fe5d26] m-10">
           Why Choose Us<span className="text-white">?</span>
         </h1>
         <p className="md:text-3xl sm:text-xl italic mb-4">
           <span className="text-csblue2">"</span>Excellence is not just what we{' '}
-          <span className="text-csblue2">deliver</span>; it’s who we are
+          <span className="text-csblue2 underline">deliver</span>; it’s who we are
           <span className="text-csblue2">"</span>
         </p>
         <p className="text-2xl tracking-widest px-8">
