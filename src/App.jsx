@@ -5,6 +5,8 @@ import ChoosePage from "./components/ChoosePage";
 import ValuePage from "./components/ValuePage";
 import WhatWeDo from "./components/WhatWeDo";
 import Features from "./components/Features";
+import Mission from "./components/Mission";
+
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
@@ -24,6 +26,8 @@ function App() {
       <ValuePage /> 
       <WhatWeDo />
       <Features/>
+      <Mission/>
+      
     </div>
   )
 }
