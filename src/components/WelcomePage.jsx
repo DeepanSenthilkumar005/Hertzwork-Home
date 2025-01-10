@@ -31,7 +31,7 @@ function WelcomePage() {
             <img
               src={welcomePerson}
               alt="Hertzworkz Logo or Relevant Visual"
-              className="rounded-md object-cover p-16 mb-2"
+              className="rounded-md object-cover p-16 mb-2 lg:p-32"
             />
           </div>
         </div>
