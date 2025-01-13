@@ -12,7 +12,7 @@ import Mission from "./components/Mission";
 
 function App() {
   return (
-    <div className="no-scrollbar">
+    <div className="w-screen overflow-x-hidden overflow-y-hidden">
       {/* <BrowserRouter>
         <Routes>
          <NavBar/>
