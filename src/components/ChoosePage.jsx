@@ -45,7 +45,7 @@ function ChoosePage() {
       </div>
 
       {/* Video Section */}
-      <div className="relative h-[60vh] w-full">
+      <div className="relative h-[60vh] w-full z-50">
         <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover">
           <source src={sampleVideo} type="video/mp4" />
           Your browser does not support the video tag.

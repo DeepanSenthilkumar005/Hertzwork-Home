@@ -57,7 +57,7 @@ function ValuePage() {
   ];
 
   return (
-    <section className="bg-black">
+    <section className="bg-black pt-6 mt-5 z-0">
       {/* Top Content */}
       <div className="BelowContent bg-black grid md:grid-cols-4 gap-6 p-8">
         {cardData.map((card, index) => (
