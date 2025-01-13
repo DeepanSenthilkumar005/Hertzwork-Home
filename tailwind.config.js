@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(180deg, #544E4E 0%, #24242400 100%)',
+      },
       textShadow: {
         glow: '0 0 5px #ff8c00, 0 0 10px #ff8c00, 0 0 20px #ff8c00, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 50px #ff4500',
       },
