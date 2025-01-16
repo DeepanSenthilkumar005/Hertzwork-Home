@@ -24,7 +24,7 @@ function Mission() {
         <img
           src={mission}
           alt="Mission"
-          className="w-full lg:w-[40%] h-auto max-h-[460px] object-cover"
+          className="w-full  lg:w-[25%] h-auto max-h-[460px] object-cover"
         />
 
         {/* Orange Line */}
@@ -69,7 +69,7 @@ function Mission() {
         <img
           src={vision}
           alt="Vision"
-          className="w-full lg:w-[40%] h-auto max-h-[350px] object-cover"
+          className="w-full lg:w-[25%] h-auto max-h-[350px] object-cover"
         />
       </div>
     </section>
