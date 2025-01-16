@@ -7,10 +7,10 @@ import iconback from "../assets/Iconback.png";
 
 function WelcomePage() {
   const cardData = [
-    { title: "Innovative Design", icon: icon1 },
-    { title: "Seamless Development", icon: icon2 },
-    { title: "Advanced Technologies", icon: icon3 },
-    { title: "Customer Focused", icon: icon4 },
+    { title: "Innovative Design", icon: icon1, link: "", },
+    { title: "Seamless Development", icon: icon2, link: "", },
+    { title: "Advanced Technologies", icon: icon3, link: "", },
+    { title: "Customer Focused", icon: icon4, link: "", },
   ];
 
   return (
@@ -41,16 +41,15 @@ function WelcomePage() {
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="bg-[#1a1a1a] rounded-md hover:scale-105 transition-transform duration-200 p-6 flex flex-col items-center space-y-4"
+            className="relative bg-[#1a1a1a] rounded-md hover:scale-105 transition-transform duration-200 p-6 flex flex-col items-center space-y-4"
           >
-            <div className="relative">
-              <img
-                src={iconback}
-                alt="Icon Background"
-                className="absolute w-20 h-20 top-0 left-0 opacity-30 transition-transform duration-300 transform hover:rotate-45"
-              />
-              <img src={card.icon} alt={card.title} className="relative z-10" />
-            </div>
+            <img
+              src={iconback}
+              alt="Icon Background"
+              // onClick={}
+              className="absolute top-0 right-0 m-3 cursor-pointer transition-transform duration-300 transform hover:rotate-45"
+            />
+            <img src={card.icon} alt={card.title} className="relative z-10" />
             <p className="text-welcometext text-lg font-medium">{card.title}</p>
           </div>
         ))}
