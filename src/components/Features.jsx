@@ -82,7 +82,7 @@ function Features() {
       {/* Top Content */}
       <div className="topContent py-6">
         <p className="md:text-4xl stm:text-xl font-bold mb-2 text-left text-white px-8">
-          Our
+        Our&nbsp;
           <span className="md:text-4xl stm:text-xl font-bold text-orange-600">
             Features
           </span>

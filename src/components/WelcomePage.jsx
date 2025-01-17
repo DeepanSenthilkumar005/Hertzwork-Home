@@ -19,7 +19,7 @@ function WelcomePage() {
       <div className="topContent flex flex-col md:flex-row items-center justify-center w-full mx-auto md:h-[70vh]">
         {/* Left Content */}
         <div className="leftContent bg-darkGray text-left text-welcometext p-8 md:rounded-br-[4rem] flex flex-col justify-center md:w-1/2">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
+          <h2 className="text-2xl md:text-4xl mb-6 text-white">
             Welcome to <span className="text-orange-600">Hertzworkz!</span>
           </h2>
           <p className="text-lg md:text-xl leading-relaxed">
