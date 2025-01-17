@@ -81,11 +81,11 @@ function Features() {
     <section className="Feature page bg-black w-screen">
       {/* Top Content */}
       <div className="topContent py-6">
-        <p className="text-4xl font-bold mb-2 text-left text-white px-8">
+        <p className="md:text-4xl stm:text-xl font-bold mb-2 text-left text-white px-8">
           Our
-          <span className="text-4xl font-bold text-orange-600"> Features</span>
+          <span className="md:text-4xl stm:text-xl font-bold text-orange-600"> Features</span>
         </p>
-        <p className="text-2xl text-white tracking-widest px-8">
+        <p className="md:text-2xl text-white tracking-widest px-8">
           Discover a wide range of powerful features at Hertzworkz, designed to
           streamline your business operations and enhance productivity. From
           innovative solutions to seamless user experiences, we provide tools

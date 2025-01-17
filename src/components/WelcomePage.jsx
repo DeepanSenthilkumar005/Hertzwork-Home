@@ -50,7 +50,7 @@ function WelcomePage() {
               className="absolute top-0 right-0 m-3 cursor-pointer transition-transform duration-300 transform hover:rotate-45"
             />
             <img src={card.icon} alt={card.title} className="relative z-10" />
-            <p className="text-welcometext text-lg font-medium">{card.title}</p>
+            <p className="text-welcometext stm:text-center text-lg font-medium">{card.title}</p>
           </div>
         ))}
       </div>

@@ -50,52 +50,48 @@ function FaqPage() {
     Array(Questions.length).fill(false)
   );
 
-  // Toggle visibility of the answer for a given question
   const toggleAnswer = (index) => {
     setVisibleAnswers((prev) =>
       prev.map((visible, i) => (i === index ? !visible : visible))
     );
   };
 
-  // FAQ Item Component
   const FaqItem = ({ question, answer, index, isVisible, onClick }) => (
     <div
-      className="faq-item border-b border-[#86868B] pb-4 cursor-pointer hover:bg-[#333333]"
+      className="faq-item border-b border-gray-600 pb-4 cursor-pointer hover:bg-gray-800"
       onClick={onClick}
     >
-      <span className="flex items-center">
-        <div className="bg-[linear-gradient(180deg,#544E4E,#24242400)]  w-14 h-14 rounded-md flex justify-center items-center text-white font-bold text-lg mr-4">
+      <div className="flex items-center">
+        <div className="bg-gradient-to-b from-gray-600 to-transparent min-w-10 min-h-10 rounded-md flex justify-center items-center text-white font-bold text-lg mr-4">
           {index + 1}
         </div>
         <h3
-          className={`text-[18px] font-bold ${
-            isVisible ? "text-[#22F95B]" : "text-white"
+          className={`text-lg stm:text-[12px] font-bold ${
+            isVisible ? "text-green-500" : "text-white"
           }`}
         >
           {question}
         </h3>
-        <FaPlus className="ms-auto text-white me-8 hover:scale-110 transition-all duration-200 ease-in-out" />
-      </span>
-      {isVisible && (
-        <p className="text-[16px] text-[#B3B3B3] mt-2">{answer}</p>
-      )}
+        <FaPlus className="ms-auto text-white me-8  hover:scale-110 transition-all duration-200 ease-in-out" />
+      </div>
+      {isVisible && <p className="text-base text-gray-400 mt-2">{answer}</p>}
     </div>
   );
 
   return (
-    <section className="FAQ_Page p-4 bg-black w-screen max-w-full overflow-x-hidden">
-      <div className="Content border-2 border-[#86868B]">
+    <section className="FAQ_Page p-4 bg-black w-full max-w-full overflow-x-hidden">
+      <div className="Content md:border-2 border-gray-600 rounded-lg">
         {/* Header */}
-        <div className="Heading h-[260px] flex flex-col justify-center items-center border-[#86868B] border-b-2 text-white">
-          <h1 className="text-[35px] mb-2">Frequently Asked Questions</h1>
-          <p className="text-[18px]">
+        <div className="Heading h-60 flex flex-col justify-center items-center text-white">
+          <h1 className="text-3xl stm:text-xl mb-2 text-center">Frequently Asked Questions</h1>
+          <p className="text-lg stm:text-[12px] text-center stm:px-2 px-4">
             Still have questions? Contact our team at
-            <span className="text-[#22F95B] ml-1">hello@hertzworkz.com</span>
+            <span className="text-green-500 ml-1">hello@hertzworkz.com</span>
           </p>
         </div>
 
         {/* FAQ Section */}
-        <div className="BottomContent grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+        <div className="BottomContent grid grid-cols-1 md:grid-cols-2 gap-8 stm:p-4 md:p-8">
           {/* Left Column */}
           <div className="space-y-6">
             {Questions.slice(0, 4).map((item, index) => (

@@ -7,10 +7,10 @@ function Mission() {
     <section className="Mission min-h-screen w-screen bg-black text-[#B3B3B3]">
       {/* Title Section */}
       <div className="title p-4">
-        <h1 className="text-[50px] text-center font-bold text-[#fe5d26] text-glow m-3">
+        <h1 className="text-[50px] text-center md:font-bold text-[#fe5d26] md:text-glow m-3">
           Mission & Vision
         </h1>
-        <p className="text-[20px] lg:text-[28px] mx-4 lg:mx-10 leading-relaxed">
+        <p className="text-[20px] stm:text-center stm:text-base lg:text-[28px] mx-4 lg:mx-10 leading-relaxed">
           We envision being a leading force in the industry, driven by
           innovation, integrity, and inclusivity, creating a brighter financial
           future for individuals and businesses while maintaining a strong
@@ -31,9 +31,9 @@ function Mission() {
         <div className="border-l-2 lg:block hidden border-[#FE5D26] h-[250px]"></div>
 
         {/* Mission Content */}
-        <div className="text-white font-sans max-w-2xl text-center lg:text-left">
+        <div className="text-white stm:border-csorange stm:border-s-2 stm:ps-5 font-sans max-w-2xl stm:text-left text-center lg:text-left">
           <h1 className="text-[29.5px] mb-4">Mission</h1>
-          <p className="text-[20px] leading-relaxed text-[#B3B3B3]">
+          <p className="text-[20px] leading-relaxed stm:text-base text-[#B3B3B3]">
             At YourBank, our mission is to empower our customers to achieve
             financial success. We are dedicated to delivering innovative banking
             solutions that cater to their unique needs. Through personalized
@@ -48,9 +48,9 @@ function Mission() {
       {/* Vision Section */}
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8 mt-4 mx-8">
         {/* Vision Content */}
-        <div className="text-white font-sans max-w-2xl text-center lg:text-left">
+        <div className="text-white stm:text-left stm:border-csorange stm:border-e-2 stm:pe-5 font-sans max-w-2xl text-center lg:text-left">
           <h1 className="text-[29.5px] mb-4">Vision</h1>
-          <p className="text-[20px] leading-relaxed text-[#B3B3B3]">
+          <p className="text-[20px] leading-relaxed stm:text-base text-[#B3B3B3]">
             Our vision at YourBank is to redefine banking by creating a seamless
             and personalized experience for our customers. We envision a future
             where banking is accessible, transparent, and tailored to individual
