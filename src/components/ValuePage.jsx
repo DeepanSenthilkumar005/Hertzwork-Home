@@ -97,13 +97,13 @@ function ValuePage() {
         </div>
 
         {/* Right Content */}
-        <div className="md:col-span-2 p-4 grid grid-cols-2 gap-4 border-8 border-[#262626] rounded-xl bg-[#141414]">
+        <div className="md:col-span-2 p-4 grid md:grid-cols-2 gap-4 border-8 border-[#262626] rounded-xl bg-[#141414]">
           {valueData.map((value, index) => (
             <div
               key={index}
               className="p-4 flex flex-col justify-center items-start text-left border border-[#262626] bg-[#1a1a1a] rounded-lg"
             >
-              <div className="hover:scale-105 cursor-pointer ease-in-out duration-300 stm:justify-center md:flex items-center space-x-4 mb-2">
+              <div className="hover:scale-105 cursor-pointer ease-in-out duration-300 stm:justify-center flex items-center space-x-4 mb-2">
                 <img
                   src={value.icon}
                   alt={value.title}

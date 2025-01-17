@@ -83,7 +83,9 @@ function Features() {
       <div className="topContent py-6">
         <p className="md:text-4xl stm:text-xl font-bold mb-2 text-left text-white px-8">
           Our
-          <span className="md:text-4xl stm:text-xl font-bold text-orange-600"> Features</span>
+          <span className="md:text-4xl stm:text-xl font-bold text-orange-600">
+            Features
+          </span>
         </p>
         <p className="md:text-2xl text-white tracking-widest px-8">
           Discover a wide range of powerful features at Hertzworkz, designed to
@@ -94,9 +96,9 @@ function Features() {
       </div>
 
       {/* Bottom Content */}
-      <div className="ButtonContent w-full my-auto py-6 m-4 grid md:grid-cols-5">
+      <div className="ButtonContent w-full my-auto p-6 md:mx-4 grid grid-cols-1 md:grid-cols-5 justify-items-center">
         {/* Categories Section */}
-        <div className="categories bg-[#1c1c1c] justify-between py-10 col-span-1 flex md:flex-col stm:py-8 stm:w-screen stm:mx-9 gap-4 my-2 px-8 w-full">
+        <div className="categories stm:m-4 bg-[#1c1c1c] justify-between py-10 col-span-1 flex md:flex-col stm:py-8 stm:w-screen stm:mx-9 gap-4 my-2 px-8 w-full">
           {List.map((item) => (
             <button
               key={item}
@@ -113,7 +115,7 @@ function Features() {
         </div>
 
         {/* Cards Section */}
-        <div className="cards col-span-4 grid grid-cols-1 md:grid-cols-2 gap-6 px-8">
+        <div className="cards col-span-4 grid grid-cols-1 md:grid-cols-2  gap-6 md:px-8 justify-center">
           {categoryData[selectedCategory].map((card, index) => (
             <div
               key={index}
@@ -121,8 +123,11 @@ function Features() {
             >
               <div className="heading flex justify-between">
                 <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-              <img src={BackIcon} alt="Back Icon" className="w-4 mb-2 hover:rotate-45 hover:cursor-pointer duration-200 ease-in-out" />
-
+                <img
+                  src={BackIcon}
+                  alt="Back Icon"
+                  className="w-4 mb-2 hover:rotate-45 hover:cursor-pointer duration-200 ease-in-out"
+                />
               </div>
               <p>{card.description}</p>
             </div>
