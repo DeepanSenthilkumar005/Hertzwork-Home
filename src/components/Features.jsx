@@ -98,14 +98,14 @@ function Features() {
       {/* Bottom Content */}
       <div className="ButtonContent w-full my-auto p-6 md:mx-4 grid grid-cols-1 md:grid-cols-5 justify-items-center">
         {/* Categories Section */}
-        <div className="categories stm:m-4 bg-[#1c1c1c] justify-between py-10 col-span-1 flex md:flex-col stm:py-8 stm:w-screen stm:mx-9 gap-4 my-2 px-8 w-full">
+        <div className="categories stm:m-4 bg-[#1c1c1c] justify-between py-10 col-span-1 flex md:flex-col stm:py-8 stm:w-full stm:mx-9 gap-4 my-2 px-8 w-full">
           {List.map((item) => (
             <button
               key={item}
-              className={`px-4 py-2 text-sm text-white font-bold rounded-s-full rounded-e-full ${
+              className={` py-2 text-sm text-white font-bold rounded-s-full rounded-e-full ${
                 selectedCategory === item
-                  ? "border-orange-600 border-2"
-                  : "bg-[#1c1c1c] hover:border-orange-500 hover:border-2"
+                  ? "border-orange-600 md:border-2 stm:text-orange-600"
+                  : "bg-[#1c1c1c] hover:border-orange-500 md:hover:border-2"
               }`}
               onClick={() => setSelectedCategory(item)}
             >
