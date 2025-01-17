@@ -33,7 +33,7 @@ function NavBar() {
       </div>
 
       {/* Mobile Menu Button */}
-      <div className="md:hidden m-1" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <div className="md:hidden overflow-x-hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? (
           <IoCloseOutline className="text-white text-2xl" />
         ) : (
@@ -46,13 +46,13 @@ function NavBar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black text-white md:hidden">
+        <div className="absolute top-[60px] right-0 w-3/5 bg-[#1D1D1F] rounded-lg text-white md:hidden">
           <ul className="flex flex-col list-none text-center py-5">
             {["Home", "Services", "Products", "Career", "Contact Us"].map(
               (item) => (
                 <li
                   key={item}
-                  className="py-3 text-base cursor-pointer font-sans border-b border-gray-700 hover:bg-gray-800"
+                  className="py-3 text-base cursor-pointer font-sans md:border-b border-gray-700 hover:bg-gray-800"
                   onClick={() => setIsMenuOpen(false)} // Close menu on link click
                 >
                   {item}
@@ -61,7 +61,7 @@ function NavBar() {
             )}
           </ul>
           <div
-            className="enquiry justify-center w-full py-[10px] px-[15px] text-[14px] border border-transparent rounded-[6.25px] font-urbanist transition-all duration-300 ease-in-out cursor-pointer hover:border-[#fe5d26] hover:bg-[#262626] mx-5 mb-5"
+            className="enquiry justify-center w-fit mx-auto py-[10px] px-[15px] text-[14px] border border-transparent rounded-[6.25px] font-urbanist transition-all duration-300 ease-in-out cursor-pointer border-[#fe5d26] mb-5"
             onClick={() => setIsMenuOpen(false)}
           >
             Enquire Now

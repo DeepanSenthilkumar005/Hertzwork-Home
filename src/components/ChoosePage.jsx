@@ -4,7 +4,7 @@ import buildings from "../assets/space building.png";
 
 function ChoosePage() {
   return (
-    <section className="choosePage min-h-screen w-screen bg-black text-white flex flex-col items-center">
+    <section className="choosePage md:min-h-screen w-screen bg-black text-white flex flex-col items-center">
       {/* Top Portion */}
       <div className="topPortion text-center p-8 w-[90%] max-w-[1200px]">
         <h1 className="text-glow text-[40px] sm:text-[50px] font-bold text-[#fe5d26] my-6">
