@@ -14,12 +14,12 @@ function WelcomePage() {
   ];
 
   return (
-    <section className="welcomePage stm:py-4 font-sans bg-black min-h-screen flex flex-col items-center justify-between">
+    <section className="welcomePage stm:py-4 px-6 font-sans bg-black min-h-screen flex flex-col items-center justify-between">
       {/* Top Content */}
-      <div className="topContent flex flex-col md:flex-row items-center justify-center w-[90%] max-w-[1200px] mx-auto md:h-[70vh]">
+      <div className="topContent flex flex-col md:flex-row items-center justify-center w-full mx-auto md:h-[70vh]">
         {/* Left Content */}
         <div className="leftContent bg-darkGray text-left text-welcometext p-8 md:rounded-br-[4rem] flex flex-col justify-center md:w-1/2">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
             Welcome to <span className="text-orange-600">Hertzworkz!</span>
           </h2>
           <p className="text-lg md:text-xl leading-relaxed">
@@ -37,7 +37,7 @@ function WelcomePage() {
       </div>
 
       {/* Bottom Content */}
-      <div className="bottomContent grid grid-cols-2 md:grid-cols-4 gap-6 bg-[#313132] p-6 rounded-md w-[90%] max-w-[1200px] mx-auto mt-8">
+      <div className="bottomContent grid grid-cols-2 md:grid-cols-4 gap-6 bg-[#313132] p-6 rounded-md w-full px-6 mx-auto mt-8">
         {cardData.map((card, index) => (
           <div
             key={index}

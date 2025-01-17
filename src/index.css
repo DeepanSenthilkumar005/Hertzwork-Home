@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @layer utilities {
-    .text-glow {
-      text-shadow: 4px 4px 10px #f48059,-2px -2px 38px #f2baa7 ,10px 0px 10px #cfb1a946, 
-      10px 0px 20px #e6cfcf1a, 
-      10px 0px 20px #d69d9d1e; 
-    }}
+  .md:text-glow {
+    text-shadow: 2px 2px 5px rgba(254, 93, 38, 0.8),
+                 0 0 15px rgba(254, 93, 38, 0.6),
+                 0 0 30px rgba(254, 93, 38, 0.4);
+  }
 
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

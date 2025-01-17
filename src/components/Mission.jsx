@@ -7,9 +7,10 @@ function Mission() {
     <section className="Mission min-h-screen w-screen bg-black text-[#B3B3B3]">
       {/* Title Section */}
       <div className="title p-4">
-        <h1 className="text-[50px] text-center md:font-bold text-[#fe5d26] md:text-glow m-3">
-          Mission & Vision
-        </h1>
+      <h1 className="text-[50px] text-center md:font-bold text-[#fe5d26] md:text-glow m-3">
+        Mission & Vision
+      </h1>
+
         <p className="text-[20px] stm:text-center stm:text-base lg:text-[28px] mx-4 lg:mx-10 leading-relaxed">
           We envision being a leading force in the industry, driven by
           innovation, integrity, and inclusivity, creating a brighter financial

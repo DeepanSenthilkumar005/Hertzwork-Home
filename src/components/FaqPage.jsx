@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus, FaTimes } from "react-icons/fa";
 
 function FaqPage() {
   const Questions = [
@@ -58,7 +58,7 @@ function FaqPage() {
 
   const FaqItem = ({ question, answer, index, isVisible, onClick }) => (
     <div
-      className="faq-item border-b border-gray-600 pb-4 cursor-pointer hover:bg-gray-800"
+      className="faq-item border-b border-gray-100 pb-4 cursor-pointer hover:bg-gray-800"
       onClick={onClick}
     >
       <div className="flex items-center">
@@ -72,7 +72,19 @@ function FaqPage() {
         >
           {question}
         </h3>
-        <FaPlus className="ms-auto text-white me-8  hover:scale-110 transition-all duration-200 ease-in-out" />
+        {isVisible ? (
+          <FaTimes
+            className="ms-auto text-white me-8 hover:scale-110 transition-all duration-200 ease-in-out"
+            onClick={(e) => {
+              e.stopPropagation(); // Prevents toggling the visibility when clicking the icon.
+              toggleAnswer(index);
+            }}
+          />
+        ) : (
+          <FaPlus
+            className="ms-auto text-white me-8 hover:scale-110 transition-all duration-200 ease-in-out"
+          />
+        )}
       </div>
       {isVisible && <p className="text-base text-gray-400 mt-2">{answer}</p>}
     </div>
