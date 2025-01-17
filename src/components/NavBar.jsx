@@ -9,11 +9,14 @@ function NavBar() {
   return (
     <div className="navbar w-screen flex items-center justify-between bg-black py-[12.5px] px-8 text-white">
       {/* Logo */}
-      <img
+      <a href="">
+              <img
         src={logo}
         alt="Logo"
         className="logo stm:w-20 ms-0 md:w-36 cursor-pointer ml-5"
       />
+      </a>
+
 
       {/* Desktop Menu */}
       <div className="hidden mx-auto md:flex md:items-center md:space-x-5">

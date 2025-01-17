@@ -37,7 +37,9 @@ function WelcomePage() {
       </div>
 
       {/* Bottom Content */}
-      <div className="bottomContent grid grid-cols-2 md:grid-cols-4 gap-6 bg-[#313132] p-6 rounded-md w-full px-6 mx-auto mt-8">
+      <div className="bottomContent grid 
+      stm:grid-cols-2
+       md:grid-cols-4 gap-6 bg-[#313132] p-6 rounded-md w-full px-6 mx-auto mt-8">
         {cardData.map((card, index) => (
           <div
             key={index}
