@@ -22,7 +22,7 @@ function ChoosePage() {
       </div>
 
       {/* Video Section */}
-      <div className="relative stm:hidden h-[50vh] sm:h-[60vh] w-full z-50 mt-6">
+      <div className="relative h-[50vh] sm:h-[60vh] w-full z-50 mt-6">
         <video
           autoPlay
           loop

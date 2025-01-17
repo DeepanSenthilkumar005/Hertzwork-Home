@@ -10,20 +10,24 @@ function Features() {
       title: "Web Development Services",
       description:
         "Access a suite of web development tools that allow you to manage your website efficiently.",
+      link:"",
     },
     {
       title: "Mobile App Access",
       description:
         "Manage your business or app from anywhere using secure online connections.",
+        link:"",
     },
     {
       title: "Secure Data Access",
       description: "Safely access important data and reports from the cloud.",
+      link:"",
     },
     {
       title: "Remote Collaboration Tools",
       description:
         "Share, communicate, and collaborate in real-time, no matter where you are.",
+        link:"",
     },
   ];
   const cards2 = [
@@ -31,21 +35,25 @@ function Features() {
       title: "Analytics & Reporting",
       description:
         "Tools for tracking your business metrics, analyzing trends, and reporting on performance.",
+        link:"",
     },
     {
       title: "Financial Tools",
       description:
         "Manage budgets, expenses, and transactions, helping to keep finances in check.",
+        link:"",
     },
     {
       title: "Project Management Tools",
       description:
         "Coordinate tasks, track progress, and manage deadlines to ensure your team stays productive.",
+        link:"",
     },
     {
       title: "AI/ML Solutions",
       description:
         "Use intelligent tools to automate tasks, predict trends, and optimize business strategies.",
+        link:"",
     },
   ];
   const cards3 = [
@@ -53,21 +61,25 @@ function Features() {
       title: "24/7 Technical Support",
       description:
         "Get round-the-clock assistance with any technical challenges or system issues.",
+        link:"",
     },
     {
       title: "Helpdesk & Ticketing",
       description:
         "A dedicated helpdesk to resolve queries and manage service requests efficiently.",
+        link:"",
     },
     {
       title: "Customer Success Team",
       description:
         "Guidance to help clients maximize the potential of their services or products.",
+        link:"",
     },
     {
       title: "Training and Onboarding",
       description:
         "Personalized support to help you and your team get up to speed with new systems and tools.",
+        link:"",
     },
   ];
 
@@ -123,11 +135,14 @@ function Features() {
             >
               <div className="heading flex justify-between">
                 <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-                <img
-                  src={BackIcon}
-                  alt="Back Icon"
-                  className="w-4 mb-2 hover:rotate-45 hover:cursor-pointer duration-200 ease-in-out"
-                />
+                <a href={card.link}>
+                  <img
+                    src={BackIcon}
+                    alt="Back Icon"
+                    className="w-4 mb-2 hover:rotate-45 hover:cursor-pointer duration-200 ease-in-out"
+                  />
+                </a>
+
               </div>
               <p>{card.description}</p>
             </div>
