@@ -74,7 +74,7 @@ function FaqPage() {
         </h3>
         {isVisible ? (
           <FaTimes
-            className="ms-auto text-white me-8 hover:scale-110 transition-all duration-200 ease-in-out"
+            className="ms-auto text-green-500 me-8 hover:scale-110 transition-all duration-200 ease-in-out"
             onClick={(e) => {
               e.stopPropagation(); // Prevents toggling the visibility when clicking the icon.
               toggleAnswer(index);
