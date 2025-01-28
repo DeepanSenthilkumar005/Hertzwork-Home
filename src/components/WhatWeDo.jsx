@@ -22,9 +22,9 @@ function WhatWeDo() {
 
         {/*Image*/}
 
-        <div className="relative flex justify-center items-center">
-    <img className="h-auto max-w-[80%]" src={whatDoWe} alt="What We Do" />
-  </div>
+          <div className="ImageContent">
+            
+          </div>
         </section> 
     )
 }

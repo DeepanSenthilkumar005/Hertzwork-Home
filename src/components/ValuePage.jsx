@@ -9,6 +9,7 @@ import icon7 from "../assets/ValuePage/Icon3.svg";
 import icon8 from "../assets/ValuePage/Icon4.svg";
 import icon9 from "../assets/ValuePage/Icon.svg";
 
+
 function ValuePage() {
   const cardData = [
     {

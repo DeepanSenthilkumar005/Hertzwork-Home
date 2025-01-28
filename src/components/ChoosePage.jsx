@@ -1,6 +1,9 @@
 import React from "react";
-import sampleVideo from "../assets/videos/space.mp4";
-import buildings from "../assets/space building.png";
+import bulb from "../assets/ChoosePage/bulb.svg"
+import bulbstand from "../assets/ChoosePage/bulbstand.svg"
+import person from "../assets/ChoosePage/person.svg"
+import phone from "../assets/ChoosePage/phone.svg"
+import vector from "../assets/ChoosePage/vector.svg"
 
 function ChoosePage() {
   return (
@@ -21,23 +24,15 @@ function ChoosePage() {
         </p>
       </div>
 
-      {/* Video Section */}
-      <div className="relative h-[50vh] sm:h-[60vh] w-full z-50 mt-6">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute top-0 left-0 px-6 w-full h-full object-cover"
-        >
-          <source src={sampleVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <img
-          src={buildings}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 sm:w-64 md:w-80 lg:w-96"
-          alt="Centered Building"
-        />
+    {/* New Photo */}
+      <div className="ImageContent stm:w-fit  w-screen flex p-6 justify-between ">
+        <img src={bulb} alt="bulb" />
+        <img src={bulbstand} alt="bulbstand" />
+        <a href="#" className="text-[#544E4E] md:ms-80 absolute cursor-pointer w-40 m-auto flex bg-white rounded-lg p-4">Explore more <span><img src={vector} alt="" className="mt-1 ms-3" /></span> </a>
+        <div className=" flex">
+          <img src={person} alt="person" className="absolute z-50" />
+          <img src={phone} alt="phone" className="relative z-0 left-0" />
+        </div>
       </div>
     </section>
   );
