@@ -7,6 +7,7 @@ import WhatWeDo from "./components/WhatWeDo";
 import Features from "./components/Features";
 import Mission from "./components/Mission";
 import FaqPage from "./components/FaqPage";
+import Threemodel from "./components/threemodel";
 
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -21,7 +22,7 @@ function App() {
         </Routes>
       </BrowserRouter> */}
       <NavBar/>
-      <Image/>
+      <Threemodel />
       <WelcomePage/>
       <ChoosePage />
       <ValuePage /> 

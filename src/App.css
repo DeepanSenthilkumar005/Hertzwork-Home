@@ -1,0 +1,14 @@
+.canvas-container {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width:screen;
+    height: 90vh;
+    background-color: black;
+    padding-bottom: 0;
+    /* padding-top: 100px; */
+    /* z-index: 0; Ensures it's above the background */
+    display: flex; /* Use flexbox to center the 3D model */
+    justify-content: center; /* Horizontally center the 3D model */
+    align-items: center; /* Vertically center the 3D model */
+  }
